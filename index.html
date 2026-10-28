@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Road to Scratch</title>
+  <meta name="description" content="Golf practice planner and stat tracker">
+  <meta name="theme-color" content="#14532d">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Road to Scratch</h1>
+      <p id="goal-line" class="sub"></p>
+    </div>
+  </header>
+
+  <main id="view" aria-live="polite"></main>
+
+  <nav class="tabs" aria-label="Sections">
+    <button data-tab="today" class="active"><span class="ico">●</span>Today</button>
+    <button data-tab="week"><span class="ico">▦</span>Week</button>
+    <button data-tab="log"><span class="ico">✎</span>Log</button>
+    <button data-tab="progress"><span class="ico">↗</span>Progress</button>
+    <button data-tab="settings"><span class="ico">⚙</span>Setup</button>
+  </nav>
+
+  <div id="toast" role="status"></div>
+
+  <script src="drills.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
